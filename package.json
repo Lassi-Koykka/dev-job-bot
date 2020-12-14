@@ -1,0 +1,29 @@
+{
+  "name": "dev-job-bot",
+  "version": "1.0.0",
+  "description": "A bot for requesting data from the dev-job-api",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lassi-Koykka/dev-job-bot.git"
+  },
+  "author": "Lassi Köykkä",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lassi-Koykka/dev-job-bot/issues"
+  },
+  "homepage": "https://github.com/Lassi-Koykka/dev-job-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.13",
+    "typescript": "^4.1.3"
+  }
+}
