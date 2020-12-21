@@ -4,7 +4,7 @@
   "description": "A bot for requesting data from the dev-job-api",
   "main": "src/index.js",
   "scripts": {
-    "start": "ts-node-dev --respawn src/index.ts",
+    "start": "ts-node-dev --respawn index.ts",
     "build": "tsc"
   },
   "repository": {
@@ -20,10 +20,13 @@
   "dependencies": {
     "axios": "^0.21.0",
     "discord.js": "^12.5.1",
+    "discord.js-pagination": "^1.0.3",
+    "glob": "^7.1.6",
     "ts-node": "^9.1.1",
     "ts-node-dev": "^1.1.1"
   },
   "devDependencies": {
+    "@types/glob": "^7.1.3",
     "@types/node": "^14.14.13",
     "typescript": "^4.1.3"
   }
