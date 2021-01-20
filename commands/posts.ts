@@ -14,9 +14,9 @@ const postsToString = (pArray: Post[]) => {
 
 const posts: Command = {
     name: 'posts',
-    description: 'Get developer job postings from Duunitori',
+    description: 'Get the original developer job postings',
     usage: 'dev posts <all>',
-    minArgs: 1,
+    arguments: ['all'],
     cooldown: 5,
     async execute(message, args) {
         if (args[0] == 'all') {
@@ -48,10 +48,10 @@ const posts: Command = {
                 msg.edit("Here they are:");
 
                 paginationEmbed(message, pages);
-                return
+                return;
             }).catch((err) => {
                 console.log(err);
-                return msg.channel.send("Sorry, an error occurred while getting the job postings.")
+                return msg.channel.send("Sorry, an error occurred while getting the job postings.");
             })
         } else {
             //If the user supplies the command with invalid arguments

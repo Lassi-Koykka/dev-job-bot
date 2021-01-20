@@ -9,11 +9,12 @@ export interface Post {
 }
 
 export interface Technology{
-    count: number,
+    name: string,
+    jobs_count: number,
     jobs: Job[]
 }
 
-interface Job{
+export interface Job{
     heading: string,
     link: string,
     technologies: string[],
@@ -25,7 +26,7 @@ export interface Command{
     name: string,
     description: string,
     usage: string,
-    minArgs: number,
+    arguments: string[],
     cooldown: number,
     execute(message: Message, args: String[]): any
 }
